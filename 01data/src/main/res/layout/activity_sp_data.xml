@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.a01data.SpDataActivity">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TableRow>
+
+            <TextView
+
+                android:text="key:"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_sp_key"
+                android:hint="key"
+                android:textSize="20sp"
+                android:layout_weight="3"
+
+                android:paddingLeft="10dp"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </TableRow>
+        <TableRow>
+
+            <TextView
+
+                android:text="value:"
+                android:textSize="20sp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_sp_value"
+                android:hint="value"
+                android:textSize="20sp"
+                android:layout_weight="3"
+                android:paddingLeft="10dp"
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content" />
+
+
+
+        </TableRow>
+
+    </TableLayout>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:id="@+id/bt_sp_save"
+
+        android:text="save"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+
+        android:id="@+id/bt_sp_read"
+        android:text="read"
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
+
+    <TextView
+        android:id="@+id/sp_info"
+        android:background="@android:color/darker_gray"
+        android:text="null"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</LinearLayout>
